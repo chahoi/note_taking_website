@@ -38,6 +38,7 @@ body {
 .content {
     margin-left: 200px;
     padding-left: 20px;
+    display: grid;
 }
 .content h2{
     text-align: center;
