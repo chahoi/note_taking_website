@@ -1,20 +1,70 @@
 body {
     background-color: #fcd7b0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Concert One' ,'Space Mono', Arial, Helvetica, sans-serif;
 }
 
-.sidenav {
-    background-color: #fff0e0;
-    height: 100%;
+.sidenav{
+    margin: 0;
+    padding: 0;
     width: 200px;
+    background-color: #f1f1f1;
+    color: #5fc8ff;
     position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
+    height: 100%;
+    overflow: auto;
 }
 .sidenav h2{
     text-align: center;
+}
+
+.sidenav a {
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+}
+   
+  
+main{
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+main h2{
+    text-align: center;
+}
+
+.note_list{
+    list-style: square;
+    font-size: 17px;
+    color: #5fc8ff;
+}
+
+ul.about_docs li{
+    width: auto;
+    display: inline-block;
+    float: right;
+    margin: 20px;
+}
+
+/* 
+.sidenav {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #fff0e0;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+.sidenav h2{
+    text-align: center;
+}
+
+.note_list{
+    list-style: square;
+    font-size: 17px;
+    color: cornflowerblue;
 }
 .content h2{
     text-align: center;
@@ -32,7 +82,7 @@ ul.about_docs li{
     display: inline-block;
     float: right;
     margin: 20px;
-}
+} */
 
 
 
