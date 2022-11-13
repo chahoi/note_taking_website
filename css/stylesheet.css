@@ -40,11 +40,29 @@ main h2{
     color: #5fc8ff;
 }
 
+ul.about_docs{
+    padding-left: 80%;
+}
+
 ul.about_docs li{
-    width: auto;
     display: inline-block;
-    float: right;
-    margin: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .sidenav {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidnav a {float: left;}
+    div.content {margin-left: 0;}
+}
+  
+  @media screen and (max-width: 400px) {
+    .sidenav a {
+      text-align: center;
+      float: none;
+    }
 }
 
 /* 
