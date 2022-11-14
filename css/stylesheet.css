@@ -2,7 +2,11 @@ body {
     background-color: #fcd7b0;
     margin: 0;
     font-family: 'Concert One' ,'Space Mono', Arial, Helvetica, sans-serif;
-    /* display: grid; */
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    grid-template-rows: 20% 30% 10%;
+    grid-gap: 10px;
+    height: 100vh;
 }
 
 .sidenav{
@@ -21,15 +25,16 @@ body {
 
 .sidenav a {
     display: block;
-    padding: 16px;
     text-decoration: none;
 }
-   
+
   
 main, header{
     /* display: grid; */
+    /* position: relative; */
     margin-left: 200px;
     padding: 1px 16px;
+    /* height: 100%; */
 }
 main, header h2{
     text-align: center;
@@ -54,13 +59,14 @@ ul.about_docs li{
 /* Button above Textbox                                 */
 .button_above{
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items:start;
 }
 /* Botton 1 */
 .but_theme1 {
-    columns: 1;
-    padding: 15px 25px;
-    font-size: 24px;
+    /* grid-column: 1; */
+    padding: 10px;
+    font-size: 15px;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -68,7 +74,7 @@ ul.about_docs li{
     color: #fff;
     background-color: #5394a0;
     border: none;
-    border-radius: 20px;
+    border-radius: 15px;
     box-shadow: 0 9px #999;
     
 }
@@ -86,8 +92,8 @@ ul.about_docs li{
 /* Button 2 */
 .but_theme2 {
     grid-column: 6/7;
-    padding: 15px 25px;
-    font-size: 24px;
+    padding: 10px;
+    font-size: 15px;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -95,7 +101,7 @@ ul.about_docs li{
     color: #fff;
     background-color: #6e6987;
     border: none;
-    border-radius: 20px;
+    border-radius: 15px;
     box-shadow: 0 9px #999;
 }
   
@@ -110,11 +116,17 @@ ul.about_docs li{
 }
 
 /* Button Below Textbox                                 */
+.button_below{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr;
+    justify-items: end;
+}
 /* Button 3 */
 .but_theme3 {
-    grid-column: 6/7;
-    padding: 15px 25px;
-    font-size: 24px;
+    grid-column:5;
+    padding: 10px;
+    font-size: 15px;
+    margin-right: 0%;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -122,7 +134,7 @@ ul.about_docs li{
     color: #fff;
     background-color: #5394a0;
     border: none;
-    border-radius: 20px;
+    border-radius: 15px;
     box-shadow: 0 9px #999;
 }
   
@@ -137,9 +149,9 @@ ul.about_docs li{
 }
 /* Button 4 */
 .but_theme4 {
-    grid-column: 6/7;
-    padding: 15px 25px;
-    font-size: 24px;
+
+    padding: 10px;
+    font-size: 15px;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -147,7 +159,7 @@ ul.about_docs li{
     color: #fff;
     background-color: #d9827c;
     border: none;
-    border-radius: 20px;
+    border-radius: 15px;
     box-shadow: 0 9px #999;
 }
   
@@ -174,8 +186,21 @@ textarea {
     resize: both;
 }
 
+/* Footer image */
+footer {
+    /* display: grid; */
+    position: absolute;
+    bottom: 0;
+    margin-left: 50%;
+    padding: 1px 16px;
+    text-align: center;
+    color: #5fc8ff;
+}
 
-/* @media screen and (max-width: 700px) {
+
+
+
+@media screen and (max-width: 700px) {
     .sidenav {
       width: 100%;
       height: auto;
@@ -194,45 +219,7 @@ textarea {
       text-align: center;
       float: none;
     }
-} */
-
-/* 
-.sidenav {
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #fff0e0;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
 }
-.sidenav h2{
-    text-align: center;
-}
-
-.note_list{
-    list-style: square;
-    font-size: 17px;
-    color: cornflowerblue;
-}
-.content h2{
-    text-align: center;
-}
-  
-.content {
-    margin-left: 200px;
-    padding-left: 20px;
-    display: grid;
-    grid-template-rows: 6;
-}
-
-ul.about_docs li{
-    width: auto;
-    display: inline-block;
-    float: right;
-    margin: 20px;
-} */
-
 
 
 
