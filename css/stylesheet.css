@@ -1,5 +1,5 @@
 body {
-    background-color: #fcd7b0;
+    background-color: #FDF6EC;
     margin: 0;
     font-family: 'Concert One' ,'Space Mono', Arial, Helvetica, sans-serif;
     display: grid;
@@ -11,8 +11,8 @@ body {
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: #f1f1f1;
-    color: #5fc8ff;
+    background-color: #242424;
+    color: #E0C8F4;
     position:fixed;
     height: 100%;
     overflow: auto;
@@ -29,13 +29,13 @@ body {
 
 main, header h2{
     text-align: center;
-    color: #5fc8ff;
+    color: #2E5656;
 }
 
-.note_list{
+.note_list li{
     list-style: square;
     font-size: 17px;
-    color: #5fc8ff;
+    color: #E0C8F4;
 }
 
 ul.about_docs{
@@ -67,7 +67,7 @@ ul.about_docs li{
     text-decoration: none;
     outline: none;
     color: #fff;
-    background-color: #5394a0;
+    background-color: #2E5656;
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px #999;
@@ -131,7 +131,7 @@ ul.about_docs li{
     text-decoration: none;
     outline: none;
     color: #fff;
-    background-color: #5394a0;
+    background-color: #335C3A;
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px #999;
@@ -187,27 +187,35 @@ textarea {
 }
 
 /* Footer image */
-footer {
-    /* display: grid; */
-    position: absolute;
+/* footer {
+    display: flex;
+    flex-direction: column;
+    position:absolute;
     bottom: 0;
-    margin-left: 50%;
-    padding: 1px 16px;
+    left: 50%;
     text-align: center;
     color: #5fc8ff;
-}
+} */
 
 @media  screen and (min-width: 600px) {
     main, header{
         margin-left: 200px;
         padding: 1px 16px;
     }
+    footer {
+        display: flex;
+        flex-direction: column;
+        position:absolute;
+        bottom: 0;
+        left: 50%;
+        text-align: center;
+        color: #5fc8ff;
+    }
 }
 
 
 @media screen and (max-width: 599px) {
     body {
-        background-color: #fcd7b0;
         font-family: 'Concert One' ,'Space Mono', Arial, Helvetica, sans-serif;
         display: grid;
         grid-template-rows: 10% 10%;
@@ -231,6 +239,16 @@ footer {
         display: flex;
         justify-content: space-between;
         margin-top: 10px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        position:absolute;
+        bottom: 0;
+        left: 50%;
+        text-align: center;
+        color: #5fc8ff;
     }
 
 }
