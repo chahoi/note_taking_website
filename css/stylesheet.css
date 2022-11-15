@@ -3,9 +3,7 @@ body {
     margin: 0;
     font-family: 'Concert One' ,'Space Mono', Arial, Helvetica, sans-serif;
     display: grid;
-    grid-template-columns: repeat(1, 3fr);
-    grid-template-rows: 10% 50% 10%;
-    /* grid-gap: 10px; */
+    grid-template-rows: 10% 50%;
     height: 100vh;
 }
 
@@ -28,7 +26,6 @@ body {
     text-decoration: none;
 }
 
-  
 
 main, header h2{
     text-align: center;
