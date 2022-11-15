@@ -4,7 +4,7 @@ body {
     font-family: 'Concert One' ,'Space Mono', Arial, Helvetica, sans-serif;
     display: grid;
     grid-template-columns: repeat(1, 3fr);
-    grid-template-rows: 20% 30% 10%;
+    grid-template-rows: 10% 50% 10%;
     grid-gap: 10px;
     height: 100vh;
 }
@@ -48,19 +48,22 @@ main, header h2{
 }
 
 ul.about_docs{
-    padding-left: 80%;
+    display: flex;
+    justify-content: flex-end;
+
+    
 }
 
 ul.about_docs li{
     display: inline-block;
+    margin: 20px;
 }
 
 /* Buttons styling                                      */
 /* Button above Textbox                                 */
 .button_above{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    justify-items:start;
+    display: flex;
+    justify-content: space-between;
 }
 /* Botton 1 */
 .but_theme1 {
@@ -117,16 +120,20 @@ ul.about_docs li{
 
 /* Button Below Textbox                                 */
 .button_below{
-    display: grid;
+    /* display: grid;
     grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr;
-    justify-items: end;
+    justify-items: end; */
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2%;
 }
 /* Button 3 */
 .but_theme3 {
     grid-column:5;
     padding: 10px;
     font-size: 15px;
-    margin-right: 0%;
+    margin-right: 2%;
+
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -136,6 +143,7 @@ ul.about_docs li{
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px #999;
+    
 }
   
 .but_theme3:hover {
