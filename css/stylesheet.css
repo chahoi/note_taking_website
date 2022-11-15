@@ -58,6 +58,7 @@ ul.about_docs li{
 .button_above{
     display: flex;
     justify-content: space-between;
+    margin-top: 15px;
 }
 /* Botton 1 */
 .but_theme1 {
