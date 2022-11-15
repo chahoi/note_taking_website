@@ -41,14 +41,20 @@ main, header h2{
 ul.about_docs{
     display: flex;
     justify-content: flex-end;
-
-    
 }
 
 ul.about_docs li{
     display: inline-block;
     margin: 20px;
 }
+.about_docs a:link{
+    text-decoration: none;
+    color: #2E5656;
+}
+.about_docs a:hover{
+    color: red;
+}
+
 
 /* Buttons styling                                      */
 /* Button above Textbox                                 */
