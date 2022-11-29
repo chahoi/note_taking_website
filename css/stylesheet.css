@@ -1,5 +1,5 @@
 body {
-    background-color: #FDF6EC;
+    background-color: #f3e9de;
     margin: 0;
     font-family: 'Concert One' ,'Space Mono', Arial, Helvetica, sans-serif;
     display: grid;
@@ -10,8 +10,8 @@ body {
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: #242424;
-    color: #E0C8F4;
+    background-color: #faf4ec;
+    color: #256993;
     position:fixed;
     height: 100%;
     overflow: auto;
@@ -20,21 +20,21 @@ body {
     text-align: center;
 }
 
-.sidenav a {
+/* .sidenav a{
     display: block;
     text-decoration: none;
-}
+} */
 
 
-main, header h2{
+main, header h1{
     text-align: center;
-    color: #2E5656;
+    color: #256993;
 }
 
 .note_list li{
     list-style: square;
     font-size: 17px;
-    color: #E0C8F4;
+    color: #256993;
 }
 
 ul.about_docs{
@@ -49,6 +49,9 @@ ul.about_docs li{
 .about_docs a:link{
     text-decoration: none;
     color: #2E5656;
+}
+.about_docs a:visited{
+    color: #389fdf;
 }
 .about_docs a:hover{
     color: red;
