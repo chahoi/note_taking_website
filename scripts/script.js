@@ -43,3 +43,37 @@ function change_name(){
 
 
 dark_theme_button.addEventListener("click", change_name);
+
+// hiding text and add new note //
+
+const notesArray = [
+    {
+        title: "Note one", 
+        body: "This is my first note"
+    },
+    {
+        title: "Note two",
+        body: "This is my second note"
+    }
+]
+
+function new_note(){
+    if (text_area.classList.contains("note_text")){
+        text_area.classList.remove("note_text")
+        save_cancel.classList.remove("note_text")
+    }
+    else{
+        text_area.value = ''
+    }
+}
+
+new_note_button.addEventListener("click", new_note);
+
+function hide_text(){
+    text_area.classList.add("note_text");
+    save_cancel.classList.add("note_text")
+}
+
+cancel_button.addEventListener("click", hide_text);
+
+//
