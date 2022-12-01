@@ -2,7 +2,7 @@
 
 const new_note_button = document.querySelector(".but_theme1");
 
-const dark_theme_utton = document.querySelector(".but_theme2");
+const dark_theme_button = document.querySelector(".but_theme2");
 
 const save_button = document.querySelector(".but_theme3");
 
@@ -14,6 +14,21 @@ const text_area = document.querySelector(".note_area");
 
 const save_cancel = document.querySelector(".button_below");
 
-const side_barList = document.querySelector(".note_list");
+const side_bar_list = document.querySelector(".note_list");
+
+
+// dark theme function//
+
+function darkTheme(){
+    new_note_button.classList.toggle("dark1");
+    save_button.classList.toggle("dark2");
+    cancel_button.classList.toggle("dark3");
+    side_bar.classList.toggle("sidebar_dark");
+    document.body.classList.toggle("text_container_dark");
+};
+
+dark_theme_button.addEventListener("click", darkTheme);
+
+
 
 

@@ -278,5 +278,23 @@ textarea {
 
 
 /* Dark theme css */
-
+.dark1{
+    background-color: #000;
+}
+.dark2{
+    background-color: #282a3a;
+}
+.dark3{
+    background-color: #735f32;
+}
+.sidebar_dark{
+    background-color: #50577a;
+}
+.text_container_dark{
+    background-color: #6b728e;
+    color: white;
+}
+.font_color_dark_theme{
+    color: white;
+}
 
