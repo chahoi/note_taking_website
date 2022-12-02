@@ -96,3 +96,17 @@ function text_user_prompt(){
 }
 
 saveButton.addEventListener("click", text_user_prompt);
+
+
+
+// When any of the list items on the sidebar are clicked search through notesArray//
+
+function display_note(event){
+    for(let note of notesArray){
+        if(note.title.includes(event.target.textContent)){
+            textArea.value = note.body
+        }
+    }
+}
+
+sideBarList.addEventListener("click", display_note);
