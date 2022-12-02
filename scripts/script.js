@@ -70,7 +70,7 @@ function new_note(){
 newNoteButton.addEventListener("click", new_note);
 
 
-//note array
+//add note array
 
 const notesArray = [
     {
@@ -82,3 +82,13 @@ const notesArray = [
         body: "this is my second note"
     }
 ]
+
+// save button - check text area, alert, add to array
+
+function text_user_prompt(){
+    if (textArea.value !== ""){
+        input = prompt("What is the title of the note?");
+    }
+}
+
+saveButton.addEventListener("click", text_user_prompt);
