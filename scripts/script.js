@@ -46,5 +46,12 @@ function changeName(){
 
 darkThemeButton.addEventListener("click", changeName);
 
+//cancel button to hide text area, save, and cancel buttons
 
+function hideTextArea(){
+    textArea.classList.add("note_text");
+    saveCancel.classList.add("note_text")
+}
+
+cancelButton.addEventListener("click", hideTextArea);
 

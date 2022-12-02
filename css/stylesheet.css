@@ -301,3 +301,6 @@ textarea {
     background-color: #9aadc0;
 }
 
+.note_text{
+    visibility: hidden;
+}
