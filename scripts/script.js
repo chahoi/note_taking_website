@@ -32,3 +32,19 @@ function darkTheme(){
 
 
 darkThemeButton.addEventListener("click", darkTheme);
+
+//change text for dark theme button
+
+function changeName(){
+    if (darkThemeButton.textContent === "Dark Theme"){
+        darkThemeButton.textContent = "Light Theme"
+    }
+    else if (darkThemeButton.textContent === "Light Theme"){
+        darkThemeButton.textContent = "Dark Theme";
+    };
+};
+
+darkThemeButton.addEventListener("click", changeName);
+
+
+
