@@ -63,7 +63,7 @@ function new_note(){
         saveCancel.classList.remove("note_text")
     }
     else{
-        textArea.value = '- New note -';
+        textArea.value = '';
     }
 }
 
