@@ -55,3 +55,16 @@ function hideTextArea(){
 
 cancelButton.addEventListener("click", hideTextArea);
 
+//make new note button to make visible again.
+
+function new_note(){
+    if (textArea.classList.contains("note_text")){
+        textArea.classList.remove("note_text")
+        saveCancel.classList.remove("note_text")
+    }
+    else{
+        textArea.value = '- New note -';
+    }
+}
+
+newNoteButton.addEventListener("click", new_note);
