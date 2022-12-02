@@ -88,6 +88,10 @@ const notesArray = [
 function text_user_prompt(){
     if (textArea.value !== ""){
         input = prompt("What is the title of the note?");
+        notesArray.push({title:input, body: textArea.value})
+        const new_list_item = document.createElement("li");
+        new_list_item.textContent = input;
+        sideBarList.appendChild(new_list_item);
     }
 }
 
