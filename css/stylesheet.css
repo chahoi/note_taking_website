@@ -277,7 +277,7 @@ textarea {
 } */
 
 
-/* Dark theme css */
+/* Javascript css */
 .dark1{
     background-color: #000;
 }
@@ -298,3 +298,6 @@ textarea {
     color: white;
 }
 
+.note_text{
+    visibility: hidden;
+}
