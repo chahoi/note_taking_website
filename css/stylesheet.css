@@ -279,25 +279,24 @@ textarea {
 
 /* Javascript css */
 .dark1{
-    background-color: #000;
+    background-color: #A27B5C;
 }
 .dark2{
-    background-color: #282a3a;
+    background-color: #74bfd4;
 }
 .dark3{
-    background-color: #735f32;
+    background-color: #6B728E;
 }
 .sidebar_dark{
-    background-color: #50577a;
+    background-color: #3F4E4F;
+}
+.change_text_color{
+    color: whitesmoke;
 }
 .text_container_dark{
-    background-color: #6b728e;
-    color: white;
+    background-color: #2C3639;
 }
-.font_color_dark_theme{
-    color: white;
-}
-
-.note_text{
-    visibility: hidden;
+.note_black{
+    color: rgb(250, 229, 250);
+    background-color: #9aadc0;
 }
