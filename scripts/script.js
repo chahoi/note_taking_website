@@ -28,6 +28,7 @@ function darkTheme(){
     sideBar.classList.toggle("sidebar_dark");
     // darkThemeButton.classList.toggle("dark1");
     document.body.classList.toggle("text_container_dark");
+    document.querySelector(".color").style.color = "red";
 };
 
 
