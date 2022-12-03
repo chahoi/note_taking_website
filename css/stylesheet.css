@@ -1,17 +1,18 @@
 body {
     background-color: #f3e9de;
     font-family: 'Concert One' ,'Space Mono', Arial, Helvetica, sans-serif;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: max-content;
-    margin: 0;
-    height: 100vh;
 }
 
 main {
-    grid-template-rows:min-content
+    
 }
-
+aside{
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
 .sidenav{ 
     background-color: #faf4ec;
     color: #256993;
@@ -27,10 +28,7 @@ footer {
     color: #5fc8ff;
 }
 
-/* .sidenav a{
-    display: block;
-    text-decoration: none;
-} */
+
 
 
 main, header h1{
@@ -203,8 +201,29 @@ textarea {
 }
 
 @media (min-width: 600px){
+    body {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: max-content;
+        margin: 0;
+        height: 100vh;
+    }
+    header {
+        grid-column: 2;
+    }
+    
+    aside{
+        grid-column: 1;
+        grid-row: 1/4;
+    }
+    
+    main {
+        grid-column: 2/5;
+        grid-template-rows:min-content;
+    
+    }
 
-
+    
 }
 
 
