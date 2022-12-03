@@ -1,14 +1,13 @@
 body {
     background-color: #f3e9de;
     font-family: 'Concert One' ,'Space Mono', Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
-main {
-    
+aside h2{
+    margin-top: 0;
 }
-aside{
-    position: relative;
-}
+
 nav{
     display: flex;
     justify-content: space-around;
@@ -27,9 +26,6 @@ footer {
     text-align: center;
     color: #5fc8ff;
 }
-
-
-
 
 main, header h1{
     text-align: center;
@@ -220,7 +216,6 @@ textarea {
     main {
         grid-column: 2/5;
         grid-template-rows:min-content;
-    
     }
 
     
@@ -255,3 +250,4 @@ textarea {
 .note_text{
     visibility: hidden;
 }
+
