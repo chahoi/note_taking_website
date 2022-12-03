@@ -1,23 +1,30 @@
 body {
     background-color: #f3e9de;
-    margin: 0;
     font-family: 'Concert One' ,'Space Mono', Arial, Helvetica, sans-serif;
     display: grid;
-    
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: max-content;
+    margin: 0;
+    height: 100vh;
 }
 
-.sidenav{
-    margin: 0;
-    padding: 0;
-    width: 200px;
+main {
+    grid-template-rows:min-content
+}
+
+.sidenav{ 
     background-color: #faf4ec;
     color: #256993;
-    position:fixed;
-    height: 100%;
-    overflow: auto;
 }
 .sidenav h2{
     text-align: center;
+}
+
+
+/* Footer image */
+footer {
+    text-align: center;
+    color: #5fc8ff;
 }
 
 /* .sidenav a{
@@ -60,11 +67,13 @@ ul.about_docs li{
 
 /* Buttons styling                                      */
 /* Button above Textbox                                 */
+
 .button_above{
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
 }
+
 /* Botton 1 */
 .but_theme1 {
     /* grid-column: 1; */
@@ -119,14 +128,13 @@ ul.about_docs li{
 }
 
 /* Button Below Textbox                                 */
+
 .button_below{
-    /* display: grid;
-    grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr;
-    justify-items: end; */
     display: flex;
     justify-content: flex-end;
     margin-top: 2%;
 }
+
 /* Button 3 */
 .but_theme3 {
     grid-column:5;
@@ -194,32 +202,9 @@ textarea {
     resize: both;
 }
 
-/* Footer image */
-footer {
-    display: flex;
-    flex-direction: column;
-    position:absolute;
-    bottom: 0;
-    left: 50%;
-    text-align: center;
-    color: #5fc8ff;
-}
+@media (min-width: 600px){
 
 
-@media  screen and (min-width: 600px) {
-    main, header{
-        margin-left: 200px;
-        padding: 1px 16px;
-    }
-    footer {
-        display: flex;
-        flex-direction: column;
-        position:absolute;
-        bottom: 0;
-        left: 50%;
-        text-align: center;
-        color: #5fc8ff;
-    }
 }
 
 
