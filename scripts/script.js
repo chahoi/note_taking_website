@@ -16,8 +16,6 @@ const saveCancel = document.querySelector(".button_below");
 
 const sideBarList = document.querySelector(".note_list");
 
-
-
 //dark theme toggle 
 
 function darkTheme(){
@@ -26,9 +24,7 @@ function darkTheme(){
     saveButton.classList.toggle("dark2");
     cancelButton.classList.toggle("dark3");
     sideBar.classList.toggle("sidebar_dark");
-    // darkThemeButton.classList.toggle("dark1");
     document.body.classList.toggle("text_container_dark");
-    document.querySelector(".color").style.color = "red";
 };
 
 
@@ -52,7 +48,7 @@ darkThemeButton.addEventListener("click", changeName);
 function hideTextArea(){
     textArea.classList.add("note_text");
     saveCancel.classList.add("note_text")
-}
+};
 
 cancelButton.addEventListener("click", hideTextArea);
 
@@ -66,7 +62,7 @@ function new_note(){
     else{
         textArea.value = '';
     }
-}
+};
 
 newNoteButton.addEventListener("click", new_note);
 
@@ -94,7 +90,7 @@ function text_user_prompt(){
         new_list_item.textContent = input;
         sideBarList.appendChild(new_list_item);
     }
-}
+};
 
 saveButton.addEventListener("click", text_user_prompt);
 
@@ -108,6 +104,6 @@ function display_note(event){
             textArea.value = note.body
         }
     }
-}
+};
 
 sideBarList.addEventListener("click", display_note);

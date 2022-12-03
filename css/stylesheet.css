@@ -115,7 +115,7 @@ ul.about_docs li{
     background-color: #444154
 }
   
-  .but_theme2:active {
+.but_theme2:active {
     background-color: #1a1920;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
