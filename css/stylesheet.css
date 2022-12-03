@@ -1,40 +1,41 @@
 body {
-    background-color: #FDF6EC;
-    margin: 0;
+    background-color: #f3e9de;
     font-family: 'Concert One' ,'Space Mono', Arial, Helvetica, sans-serif;
-    display: grid;
-    
+    margin: 0;
 }
 
-.sidenav{
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #242424;
-    color: #E0C8F4;
-    position:fixed;
-    height: 100%;
-    overflow: auto;
+aside h2{
+    margin-top: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+.sidenav{ 
+    background-color: #faf4ec;
+    color: #256993;
 }
 .sidenav h2{
     text-align: center;
 }
 
-.sidenav a {
-    display: block;
-    text-decoration: none;
+
+/* Footer image */
+footer {
+    text-align: center;
+    color: #5fc8ff;
 }
 
-
-main, header h2{
+main, header h1{
     text-align: center;
-    color: #2E5656;
+    color: #256993;
 }
 
 .note_list li{
     list-style: square;
     font-size: 17px;
-    color: #E0C8F4;
+    color: #256993;
 }
 
 ul.about_docs{
@@ -50,6 +51,9 @@ ul.about_docs li{
     text-decoration: none;
     color: #2E5656;
 }
+.about_docs a:visited{
+    color: #389fdf;
+}
 .about_docs a:hover{
     color: red;
 }
@@ -57,11 +61,13 @@ ul.about_docs li{
 
 /* Buttons styling                                      */
 /* Button above Textbox                                 */
+
 .button_above{
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
 }
+
 /* Botton 1 */
 .but_theme1 {
     /* grid-column: 1; */
@@ -109,21 +115,20 @@ ul.about_docs li{
     background-color: #444154
 }
   
-  .but_theme2:active {
+.but_theme2:active {
     background-color: #1a1920;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
 
 /* Button Below Textbox                                 */
+
 .button_below{
-    /* display: grid;
-    grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr;
-    justify-items: end; */
     display: flex;
     justify-content: flex-end;
     margin-top: 2%;
 }
+
 /* Button 3 */
 .but_theme3 {
     grid-column:5;
@@ -191,86 +196,58 @@ textarea {
     resize: both;
 }
 
-/* Footer image */
-/* footer {
-    display: flex;
-    flex-direction: column;
-    position:absolute;
-    bottom: 0;
-    left: 50%;
-    text-align: center;
-    color: #5fc8ff;
-} */
-
-@media  screen and (min-width: 600px) {
-    main, header{
-        margin-left: 200px;
-        padding: 1px 16px;
-    }
-    footer {
-        display: flex;
-        flex-direction: column;
-        position:absolute;
-        bottom: 0;
-        left: 50%;
-        text-align: center;
-        color: #5fc8ff;
-    }
-}
-
-
-@media screen and (max-width: 599px) {
+@media (min-width: 600px){
     body {
-        font-family: 'Concert One' ,'Space Mono', Arial, Helvetica, sans-serif;
         display: grid;
-        grid-template-rows: 10% 10%;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: max-content;
+        margin: 0;
         height: 100vh;
-        align-items: start
+    }
+    header {
+        grid-column: 2;
     }
     
-    header{
-        padding-top: 10%;
+    aside{
+        grid-column: 1;
+        grid-row: 1/4;
     }
-    main{
-        padding-top: 10%;
-    }
-    .sidenav {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-    .sidnav a {
-        float: left;
-    }
-    div.content {
-        margin-left: 0;
+    
+    main {
+        grid-column: 2/5;
+        grid-template-rows:min-content;
     }
 
-    .button_above{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 70px;
-    }
-
-    footer {
-        display: flex;
-        position: sticky;
-        flex-direction: column;
-        bottom: 0;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        color: #5fc8ff;
-    }
-
+    
 }
-  
-  /* @media screen and (max-width: 400px) {
-    .sidenav a {
-      text-align: center;
-      float: none;
-    }
-} */
 
 
+
+/* Javascript css */
+.dark1{
+    background-color: #A27B5C;
+}
+.dark2{
+    background-color: #74bfd4;
+}
+.dark3{
+    background-color: #6B728E;
+}
+.sidebar_dark{
+    background-color: #3F4E4F;
+}
+.change_text_color{
+    color: whitesmoke;
+}
+.text_container_dark{
+    background-color: #2C3639;
+}
+.note_black{
+    color: rgb(250, 229, 250);
+    background-color: #9aadc0;
+}
+
+.note_text{
+    visibility: hidden;
+}
 

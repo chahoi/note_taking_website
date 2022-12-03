@@ -6,24 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Noto+Sans+KR:wght@300&family=Space+Mono&display=swap" rel="stylesheet">
     <link href="css/stylesheet.css" rel="stylesheet">
+    <script src="scripts/script.js" defer></script>
     <title>Note Taking Website</title>
 
 </head>
-<body>
-    <nav class="sidenav">
+<body class="color">
+    <aside class="sidenav">
         <h2>My Notes</h2>
-        <ul class="note_list">
-            <li><a href="#">note one</a></li>
-            <li><a href="#">note two</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <ul class="note_list">
+                <li>note one</li>
+                <li>note two</li>
+            </ul>
+        </nav>
+    </aside>
 
     <header>
-        <h2>Take Better Notes</h2>
-        <ul class="about_docs">
-            <li><a href="#"><p>About</p></a></li>
-            <li><a href="#"><p>Docs</p></a></li>
-        </ul>
+        <div>
+            <h1>Take Better Notes</h1>
+            <ul class="about_docs">
+                <li><a href="#"><p>About</p></a></li>
+                <li><a href="#"><p>Docs</p></a></li>
+            </ul>
+        </div>
     </header>
 
     <main class="content">
@@ -33,8 +38,8 @@
             <button class="but_theme2" >Dark Theme</button>
         </div>
 
-        <div>
-            <textarea name="notes" rows="6" cols="33">This is a placeholder</textarea>
+        <div class="textcontainer">
+            <textarea name="notes" rows="6" cols="33" class="note_area">This is a placeholder</textarea>
         </div>
 
         <div class="button_below">
@@ -43,7 +48,7 @@
         </div>
     </main>
     <footer>
-        <h2>Keep in Touch</h2>
+        <h3>Keep in Touch</h3>
         <div class="redirect_to">
             <a href="https://www.linkedin.com/home?originalSubdomain=ca" target="_blank" title="Linked in homepage"><img src="images/linkedin_logo.webp" alt="linkedin logo" width="50" height="50"></a>
             <a href="https://www.google.ca/" target="_blank" title="Google.ca"><img src="images/search_web.png" alt="web browser logo" width="50" height="50"></a>
